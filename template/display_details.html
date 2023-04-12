@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/356940580b.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        
+        <style>
+
+            h1{
+                margin-top: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                font-weight: 1000;
+                font-size: 30px;
+            }
+            #col_1{
+                margin:30px 20px;
+            }
+            #card_1{
+                border-color: transparent;
+                
+            }
+            #card_2{
+                padding:5px 23px 5px 10px;
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+            }
+            #card_3{
+                flex-direction: row;
+                padding:5px 23px 5px 10px;
+                margin-bottom:10px;
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+            }
+            #card_3 a{
+                position:absolute;
+                left:200px;
+                color:red;
+            }
+            #col_4{
+                margin:30px 80px;
+
+            }
+            #col_5{
+                margin:30px 30px;
+
+            }
+            #right_1{
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+            }
+            
+            #right_1 h1{
+                text-align: left;
+
+
+            }
+            #right_1 a{
+                position: absolute;
+                left:800px;
+                top:45px;
+                color:blue;
+            }
+            #right_2{
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+            }
+            #right_3{
+                margin:0px 10px 0px 2px ;
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+                
+            }
+            #right_3 p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                font-weight: 1000;
+            }
+            #right_4{
+                border-color: transparent;
+                background-color: rgb(241, 241, 241);
+                padding:5px 10px 0px 20px;
+                margin-bottom: 20px;
+            }
+            #right_4 p{
+                color:rgb(75, 75, 75);
+                font-size: 15px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #right_4 h6{
+                color:rgb(80, 80, 80);
+                font-size: 11px;
+                margin-bottom: 0px;
+            }
+            #right_5{
+                background-color: rgb(241, 241, 241);
+                border-color:transparent;
+                padding:5px 10px 0px 20px;
+                margin-bottom: 20px;
+            }
+            #right_5 h1{
+                font-size: 18px;
+                font-weight:300px;
+                margin-top: 2px;
+                margin-bottom: 5px;
+            }
+            #right_5 h6{    
+                color:rgb(80, 80, 80);
+                font-size: 11px;
+                margin-bottom: 0px;
+            }
+            #right_5 p{
+                font-weight:600;
+                font-size: 14px;
+                color:rgb(75, 75, 75);
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #contact{
+                margin-left:215px;
+            }
+            #right_6{
+                font-weight:bold;
+                font-size: 18px;
+                margin: 30px 12px 10px 0px ;
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+            }
+            #right_7{
+                background-color: rgb(241, 241, 241);
+                border-color: transparent;
+                padding:5px 10px 0px 20px;
+                margin-bottom: 20px;
+            }
+            #right_7 p{
+                font-weight:600;
+                font-size: 14px;
+                color:rgb(75, 75, 75);
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            #right_7 h6{
+                color:rgb(80, 80, 80);
+                font-size: 11px;
+                margin-bottom: 0px;
+
+            }
+            .box{
+                border-radius: 15px;
+                background-color: rgb(4, 126, 110);
+                padding-left:5px;
+                padding-right:5px;
+                width:100px;
+                justify-items: center;
+                margin: 10px 25%;
+                color:white;
+            }
+            #card2{
+                padding:5px 23px 5px 10px;
+                
+            }
+            #card3{
+                margin-top: 10px;
+                padding:5px 23px 5px 10px;
+                margin-bottom:10px;
+            }
+            #card3 a{
+                text-decoration: none;
+                color:blue;
+                font-weight: 500;
+            }
+            #col2{
+                margin:auto;
+            }
+            #back{
+                position: absolute;
+                margin: 30px 50px;
+                text-decoration: none;
+                color:white;
+                background-color: black;
+                padding: 5px 10px;
+                border-radius:5px;
+
+            }
+            #contact{
+                margin-top: 30px;
+            
+            }
+            #contact1{
+                border-color: transparent;
+                box-shadow: 2px 2px 10px rgb(221, 221, 221) ;
+                width:600px;
+                margin-right: 20px;
+            }
+            #contact1 p{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                font-weight: 1000;
+            }
+            
+            
+            
+            
+        </style>
+    </head>
+    <body><br>
+        {% if model and mode %}
+        <a id="back" href="{% url 'app:detail' %}"> < Back</a>
+
+            <hr>
+            <div class="container">
+                <div class="jumbotron">
+                    <div class="row" >
+                        <div class="col-md-3" id="col_1">
+                            <div class="card card-body" id="card_1">
+                                <h1>List of employees</h1><br>
+                                {% for i in model %}
+                                <div class="row" id="row_1">
+                                    <div class="col-md-2" id="col_2">
+                                        <div class="card card-body" id="card_2">
+                                            <a color="black"><i class="fa-solid fa-user fa-sm"></i></a>  
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10" id="col_3">
+                                        <div class="card card-body" id="card_3">
+                                        {{i.full_name | title}}<a href="delete/{{i.id}}" ><i class="fa-solid fa-trash fa-sm"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8" id="col_5">
+                            <div class="card card-body" id="right_1">
+                                <h1 >Employee details</h1>
+                                <a href="update/{{mode.id}}" ><i class="fa-solid fa-pen"></i></a>
+                                
+                                <div class="row" id="row_2">
+                                    <div class="col-md-3" id="col_6">
+                                        <div class="card card-body" id="right_2">
+                                            <img src="{{mode.image.url}}" alt="no image" height="180px" width="155px" style="border-radius:5px;">
+                                        </div>
+                                        <div class="box">
+
+                                            <p align="center">{{mode.full_name | title}}</p>
+                                        </div>
+                                        <div class="card card-body" id="right_5">
+                                            <h6>Registration</h6>
+                                            <p>{{mode.registration_no}}</p>
+                                        </div>
+                                        <div class="card card-body" id="right_5">
+                                            <h6>Department</h6>
+                                            <p>{{mode.department | title}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card card-body" id="right_3" >
+                                            <p>Personal data</p>
+
+                                            <div class="card card-body" id="right_4">
+                                                <h6>Full name</h6>
+                                                <p>{{mode.full_name | title}}</p> 
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+
+                                                    <div class="card card-body" id="right_4">
+                                                        <h6>Birthdate</h6>
+                                                        <p>{{mode.date_of_birth}}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+
+                                                    <div class="card card-body" id="right_4">
+                                                        <h6>Age</h6>
+                                                        <p>{{mode.age}}</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="card card-body" id="right_4">
+                                                <h6>Gender</h6>
+                                                <p>{{mode.gender | title}}</p>
+                                            </div>
+                                            <div class="card card-body" id="right_4">
+                                                <h6>Nationality</h6>
+                                                <p>{{mode.nationality | title}}</p>
+                                            </div>
+                                            <div class="card card-body" id="right_4">
+                                                <h6>State</h6>
+                                                <p>{{mode.state | title}}</p>
+                                            </div>
+                                            <div class="card card-body" id="right_4">
+                                                <h6>city</h6>
+                                                <p>{{mode.city | title}}</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-sm-8" id="contact">
+                                        <div class="card card-body" id="contact1">
+                                            <p>Contact</p>
+
+                                            <div class="card card-body" id="right_7">
+                                                <h6>E-mail</h6>
+                                                <p>{{mode.e_mail}}</p>
+        
+                                            </div>
+                                            <div class="card card-body"  id="right_7">
+                                                <h6>Phone no</h6>
+                                                <p>{{mode.phone_no}}</p>
+        
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% elif model %}
+        <a id="back" href="{% url 'app:home' %}">< Back</a>
+
+            <hr>
+            <div class="row">
+                <div class="col-md-2" id="col2">
+                    <div class="card card-body" id="card1">
+                        <h1>List of employees</h1><br>
+                        {% for i in model %}
+                        <div class="row" id="row1">
+                            <div class="col-md-2" id="col2">
+                                <div class="card card-body" id="card2">
+                                    <a href=""><i class="fa-solid fa-user fa-sm"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-md-10" id="col3">
+                                <div class="card card-body" id="card3">
+                                    <a href="details/{{i.id}}">{{i.full_name | title}}</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+        {% endif %}
+        <!-- {% if model %}
+        <h1 id="headline">List of employee </h1><a href="{% url 'app:home' %}">go back</a>
+        <table border="1px solid black" cellspacing="0px" cellpadding="5px">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>PHONE NO</th>
+                    <th>GENDER</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in model %}
+                    <tr>
+                        <td>{{i.id}}</td>
+                        <td>{{i.name}}</td>
+                        <td>{{i.age}}</td>
+                        <td>{{i.phone_no}}</td>
+                        <td>{{i.gender}}</td>
+                        <td><a href="update/{{i.id}}">update</a></td>
+                        <td><a href="delete/{{i.id}}">delete</a></td>
+                    </tr>
+                {% endfor %}
+        {% else %}
+            <h1>no details to show</h1>
+
+        {% endif %}
+            </tbody>
+        </table> -->
+    </body>
+</html>
